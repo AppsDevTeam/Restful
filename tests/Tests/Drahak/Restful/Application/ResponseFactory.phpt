@@ -241,7 +241,7 @@ class ResponseFactoryTest extends TestCase
     }
 
     public function testSelectsFirstContentTypeIfAcceptHeaderAcceptsAll()
-    {	
+    {
 		$this->request->expects('getHeader')
 			->once()
 			->with('Accept')
@@ -310,7 +310,7 @@ class ResponseFactoryTest extends TestCase
 			->with('pretty')
 			->andReturn(FALSE);
 
-		$this->factory->prettyPrintKey = 'pretty';
+		$this->factory->setPrettyPrintKey('pretty');
 		$response = $this->factory->create($this->resource);
 
 		Assert::true($response instanceof TextResponse);
