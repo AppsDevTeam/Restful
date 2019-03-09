@@ -2,7 +2,7 @@
 namespace Drahak\Restful\Resource;
 
 use Nette\SmartObject;
-use Nette\Templating\Helpers;
+use Latte\Runtime\Filters;
 use Nette\Utils\MimeTypeDetector;
 
 /**
