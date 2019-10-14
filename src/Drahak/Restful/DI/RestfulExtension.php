@@ -79,6 +79,11 @@ class RestfulExtension extends CompilerExtension
 	{
 		$container = $this->getContainerBuilder();
 		$config = $this->getConfig($this->defaults);
+		foreach ($this->defaults as $key => $value) {
+			if (!isset($config[$key])) {
+				$config[$key] = $value;
+			}
+		}
 
 		// Additional module
 		$this->loadRestful($container, $config);
@@ -342,7 +347,7 @@ class RestfulExtension extends CompilerExtension
 	{
 		$definitionas = $container->getDefinitions();
 		foreach ($definitionas as $definition) {
-			if ($definition->class === $type) {
+			if ((method_exists($definition, 'getType') ? $definition->getType() : $definition->class) === $type) {
 				return $definition;
 			}
 		}
