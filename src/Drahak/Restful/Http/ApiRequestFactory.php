@@ -4,6 +4,8 @@ namespace Drahak\Restful\Http;
 use Nette\Http\RequestFactory;
 use Nette\Http\Request;
 use Nette\Http\IRequest;
+use Nette\Http\Url;
+use Nette\Http\UrlScript;
 
 /**
  * Api request factory
@@ -36,10 +38,16 @@ class ApiRequestFactory
 	{
 		$request = $this->factory->createHttpRequest();
 		$url = $request->getUrl();
-		$url->setQuery($request->getQuery());
+		if (method_exists($url, 'setQuery')) {
+			$url->setQuery($request->getQuery());
+		} else {
+			$mutableUrl = new Url($url);
+			$mutableUrl->setQuery($request->getQuery());
+			$url = new UrlScript($url);
+		}
 
 		return new Request(
-			$url, NULL, $request->getPost(), $request->getFiles(), $request->getCookies(), $request->getHeaders(),
+			$url, $request->getPost(), $request->getFiles(), $request->getCookies(), $request->getHeaders(),
 			$this->getPreferredMethod($request), $request->getRemoteAddress(), null,
 			function () use ($request) { return $request->getRawBody(); }
 		);
