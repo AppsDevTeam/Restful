@@ -14,7 +14,7 @@ use Nette\Utils\Strings;
  */
 class ValidationScope implements IValidationScope
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var IValidator */
 	private $validator;

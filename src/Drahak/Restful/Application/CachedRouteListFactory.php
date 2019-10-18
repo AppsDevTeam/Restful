@@ -14,7 +14,7 @@ use Nette\Utils\Finder;
  */
 final class CachedRouteListFactory implements IRouteListFactory
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** Cache name */
 	const CACHE_NAME = 'resourceRouteList';

@@ -14,7 +14,7 @@ use Nette\SmartObject;
  */
 class Link implements IResource
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** Link pointing on self */
 	const SELF = 'self';

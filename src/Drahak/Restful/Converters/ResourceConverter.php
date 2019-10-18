@@ -11,7 +11,7 @@ use Nette\SmartObject;
  */
 class ResourceConverter
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var IConverter[] */
 	private $converters = array();

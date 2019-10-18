@@ -14,7 +14,7 @@ use Drahak\Restful\InvalidArgumentException;
  */
 class DataUrlMapper implements IMapper
 {
-    use SmartObject;
+	use SmartObject;
 
 	/**
 	 * Create DATA URL from file

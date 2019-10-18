@@ -16,7 +16,7 @@ use Traversable;
  */
 class MethodOptions
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var IRouter */
 	private $router;

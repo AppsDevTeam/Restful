@@ -12,7 +12,7 @@ use Nette\SmartObject;
  */
 class NullResponse implements IResponse
 {
-    use SmartObject;
+	use SmartObject;
 
 	/**
 	 * Do nothing

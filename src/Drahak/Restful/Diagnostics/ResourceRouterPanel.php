@@ -20,7 +20,7 @@ if (!interface_exists('Tracy\IBarPanel')) {
  */
 class ResourceRouterPanel implements IBarPanel
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var IRouter */
 	private $router;

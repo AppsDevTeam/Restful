@@ -12,7 +12,7 @@ use Nette\SmartObject;
  */
 class AuthenticationContext
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var AuthenticationProcess */
 	private $process;

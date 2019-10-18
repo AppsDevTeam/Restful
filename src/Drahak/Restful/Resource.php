@@ -19,7 +19,7 @@ use Nette\MemberAccessException;
  */
 class Resource implements ArrayAccess, Serializable, IteratorAggregate, IResource
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var array */
 	private $data = array();

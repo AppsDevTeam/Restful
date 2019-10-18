@@ -13,7 +13,7 @@ use Nette\SmartObject;
  */
 class ResourceFactory implements IResourceFactory
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var IRequest */
 	private $request;

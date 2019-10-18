@@ -16,7 +16,7 @@ use Nette\SmartObject;
  */
 abstract class BaseResponse implements IResponse
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var array|\stdClass|\Traversable */
 	protected $data;

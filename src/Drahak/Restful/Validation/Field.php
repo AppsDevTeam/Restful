@@ -15,7 +15,7 @@ use Nette\Utils\Validators;
  */
 class Field implements IField
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var array Default field error messages for validator */
 	public static $defaultMessages = array(

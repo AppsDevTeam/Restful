@@ -17,7 +17,7 @@ use Nette\SmartObject;
  */
 class HashCalculator implements IAuthTokenCalculator
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** Fingerprint hash algorithm */
 	const HASH = 'sha256';

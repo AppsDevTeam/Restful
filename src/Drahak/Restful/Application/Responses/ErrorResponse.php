@@ -8,7 +8,7 @@ use Nette\SmartObject;
 
 class ErrorResponse  implements IResponse
 {
-    use SmartObject;
+	use SmartObject;
 
 	private $response;
 

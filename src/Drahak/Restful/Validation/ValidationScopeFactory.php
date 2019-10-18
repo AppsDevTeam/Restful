@@ -10,7 +10,7 @@ use Nette\SmartObject;
  */
 class ValidationScopeFactory implements IValidationScopeFactory
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var IValidator */
 	private $validator;

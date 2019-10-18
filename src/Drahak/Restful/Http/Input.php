@@ -22,7 +22,7 @@ use Drahak\Restful\Validation\IValidationScopeFactory;
  */
 class Input implements IteratorAggregate, IInput, IDataProvider
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var array */
 	private $data;

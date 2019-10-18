@@ -14,7 +14,7 @@ use Nette\Utils\MimeTypeDetector;
  */
 class Media
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var string */
 	private $content;

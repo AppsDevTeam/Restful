@@ -19,7 +19,7 @@ use Nette\Http\IRequest;
  */
 class RequestFilter
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** Fields key in URL query */
 	const FIELDS_KEY = 'fields';

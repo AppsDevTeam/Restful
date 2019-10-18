@@ -13,7 +13,7 @@ use Drahak\Restful\IResource;
  */
 class ObjectConverter implements IConverter
 {
-    use SmartObject;
+	use SmartObject;
 
 	/**
 	 * Converts stdClass and traversable objects in resource to array

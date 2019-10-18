@@ -17,7 +17,7 @@ use Traversable;
  */
 class Error implements IteratorAggregate
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var string */
 	private $field;

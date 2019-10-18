@@ -16,7 +16,7 @@ use Drahak\Restful\InvalidArgumentException;
  */
 class RouteAnnotation implements IAnnotationParser
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var array */
 	private $methods = array(

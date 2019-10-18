@@ -12,7 +12,7 @@ use Nette\Utils\Strings;
  */
 class QueryMapper implements IMapper
 {
-    use SmartObject;
+	use SmartObject;
 
 	/**
 	 * Convert array or Traversable input to string output response

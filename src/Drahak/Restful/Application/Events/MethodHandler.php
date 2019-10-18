@@ -16,7 +16,7 @@ use Nette\SmartObject;
  */
 class MethodHandler
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var IRequest */
 	private $request;

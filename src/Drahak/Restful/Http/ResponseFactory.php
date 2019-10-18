@@ -18,7 +18,7 @@ use Nette\Utils\Paginator;
  */
 class ResponseFactory
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var IRequest */
 	private $request;

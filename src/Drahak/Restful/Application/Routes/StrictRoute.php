@@ -18,7 +18,7 @@ use Drahak\Restful\Application\IResourceRouter;
  */
 class StrictRoute implements IRouter
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var string */
 	protected $prefix;

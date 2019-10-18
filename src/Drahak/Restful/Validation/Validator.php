@@ -14,7 +14,7 @@ use Nette\Utils\Validators;
  */
 class Validator implements IValidator
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var array Command handle callbacks */
 	public $handle = array(

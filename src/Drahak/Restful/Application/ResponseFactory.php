@@ -21,7 +21,7 @@ use Nette\Http\Url;
  */
 class ResponseFactory implements IResponseFactory
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var IResponse */
 	private $response;

@@ -19,7 +19,7 @@ use Nette\Utils\Validators;
  */
 class Rule
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var string */
 	protected $field;

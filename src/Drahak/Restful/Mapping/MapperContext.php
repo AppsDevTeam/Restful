@@ -12,7 +12,7 @@ use Drahak\Restful\InvalidStateException;
  */
 class MapperContext
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var array */
 	protected $services = array();

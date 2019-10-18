@@ -10,7 +10,7 @@ use Nette\SmartObject;
  */
 class NullMapper implements IMapper
 {
-    use SmartObject;
+	use SmartObject;
 
 	/**
 	 * Convert array or Traversable input to string output response

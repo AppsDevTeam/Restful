@@ -19,7 +19,7 @@ use Drahak\Restful\InvalidArgumentException;
  */
 class XmlMapper implements IMapper
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @internal */
 	const ITEM_ELEMENT = 'item';

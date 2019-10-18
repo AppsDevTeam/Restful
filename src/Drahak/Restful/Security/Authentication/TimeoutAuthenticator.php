@@ -12,7 +12,7 @@ use Nette\SmartObject;
  */
 class TimeoutAuthenticator implements IRequestAuthenticator
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var string */
 	private $requestTimeKey;

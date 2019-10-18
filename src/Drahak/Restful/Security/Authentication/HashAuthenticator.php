@@ -14,7 +14,7 @@ use Nette\SmartObject;
  */
 class HashAuthenticator implements IRequestAuthenticator
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** Auth token request header name */
 	const AUTH_HEADER = 'X-HTTP-AUTH-TOKEN';

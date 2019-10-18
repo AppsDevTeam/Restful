@@ -23,7 +23,7 @@ use Nette\SmartObject;
  */
 class RouteListFactory implements IRouteListFactory
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** @var RobotLoader */
 	private $loader;

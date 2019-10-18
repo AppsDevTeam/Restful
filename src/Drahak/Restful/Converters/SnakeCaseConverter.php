@@ -11,7 +11,7 @@ use Nette\SmartObject;
  */
 class SnakeCaseConverter implements IConverter
 {
-    use SmartObject;
+	use SmartObject;
 
     /**
      * Converts resource data keys to snake_case

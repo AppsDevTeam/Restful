@@ -11,7 +11,7 @@ use Nette\SmartObject;
  */
 abstract class AuthenticationProcess
 {
-    use SmartObject;
+	use SmartObject;
 
 	/**
 	 * Authenticate process

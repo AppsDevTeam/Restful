@@ -12,7 +12,7 @@ use DateTime;
  */
 class DateTimeConverter implements IConverter
 {
-    use SmartObject;
+	use SmartObject;
 
 	/** DateTime format */
 	private $format = 'c';
